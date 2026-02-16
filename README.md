@@ -32,8 +32,11 @@ Frontend:
 
 cd inventory-api  
 composer install  
-create database/database.sqlite  
-configure .env for sqlite  
+create database/database.sqlite file
+configure .env for sqlite 
+add this line in .env
+DB_DATABASE=database/database.sqlite
+
 php artisan migrate  
 php artisan serve  
 
@@ -44,7 +47,7 @@ http://127.0.0.1:8000
 
 ## Frontend Setup
 
-cd inventory-ui  
+cd inventory-frontend 
 npm install  
 npm start  
 
